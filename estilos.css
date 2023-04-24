@@ -1,0 +1,92 @@
+body{
+    margin: 0px;
+    background-color:black;
+}
+
+html{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+header{
+    background-color: rgb(44, 43, 43);
+    color:white;
+    padding: 3rem 2rem;
+}
+
+header h1{
+    font-size: 3rem;
+    text-align: center;
+}
+
+p{
+    color:gray;
+    text-align: center;
+    margin: 2.5rem;
+}
+
+/*alto y ancho del section*/ 
+section a{
+    display: flex;
+    width: 600px;
+    height: 430px;
+}
+
+
+/* dar un estilo a cada imagen dentro del section*/
+section img{
+    /*su ancho es 0*/
+    width: 0px;
+    /*con esta instrucción se indica que cubra todo el espacio*/
+    flex-grow: 1;
+    object-fit: cover;
+    /*le bajo la opacidad*/
+    opacity: .8;
+    /*transición para la animación*/
+    transition: .5s ease;
+}
+
+/* estilo cuando el puntero está sobre la imagen*/
+section img:hover{
+    /* cursor en forma de mano*/
+    cursor: pointer;
+    /*cambio el ancho de la imagen*/
+    width: 500px;
+    /*le deuelvo la opacidad*/
+    opacity: 1;
+    /*le subo el contraste*/
+    filter: contrast(120%);
+}
+
+#uno{
+    display: flex;
+}
+
+article img{
+    width: 350px;
+    height: 350px;
+}
+
+footer{
+
+    padding: 1rem;
+    color:white;
+}
+
+footer section{
+    float: right;
+}
+
+footer p{
+    margin:0;
+}
+
+footer a{
+    transition: color 0.3seg ease;
+    color: white;
+    text-decoration: none;
+    cursor:pointer;
+}
+
+footer a:hover{
+    color:rgb(156, 248, 244);
+}
